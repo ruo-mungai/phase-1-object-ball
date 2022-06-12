@@ -134,3 +134,27 @@ function numPointsScored(playerInput){
 		}
 	}
 }
+
+/* 
+function players(){
+	const game = gameObject();
+	const homePlayers = game.home.players;
+	const awayPlayers = game.away.players;
+	//return Object.assign({}, homePlayers, awayPlayers);
+	return {...homePlayers, ...awayPlayers}
+}
+*/
+/* NOT IDEAL SOLUTION
+function numPointsScored(playerInput){
+	const game = gameObject()
+	for (const gameKey in game){
+		const teamObj = game[gameKey]		
+		const playerObj = teamObj.players
+		for (const playerKey in playerObj){
+			if (playerKey == playerInput){
+				console.log(playerObj[playerKey].points) 
+			}
+		}	
+	}
+}
+*/
